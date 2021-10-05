@@ -1,18 +1,19 @@
 import { Route, Switch } from "react-router-dom";
-import Cart from "../components/Cart";
+import AddToCart from "../components/AddToCart";
 import Products from "../components/Products";
 
 const Routes = () => {
   return (
     <Switch>
-      <Route>
-        <Products exact path="/" />
+      <Route exact path="/">
+        <Products/>
       </Route>
-      <Route>
-        <Cart path="/cart" />
+      <Route path="/cart" >
+        <AddToCart/>
       </Route>
     </Switch>
   );
 };
 
 export default Routes;
+  
