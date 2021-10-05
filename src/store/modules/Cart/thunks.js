@@ -13,8 +13,6 @@ export const addToCartThunk = (product) => (dispatch) => {
 
 export const removeFromCartThunk = (product) => (dispatch) => {
 
-  // const currentValue = select(store.getState())
-
   const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
   const cartItemsFiltered = cartItems.filter((item) => item.id !== product.id);
